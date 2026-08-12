@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+html { background: var(--vui-color-background); }
+body { margin: 0; }
+.demo { min-height: 100vh; padding: 20px 0 80px; color: var(--vui-color-foreground); background: var(--vui-color-background); font-family: var(--vui-font-sans); }
+.demo main { display: grid; gap: 72px; padding-top: 72px; }
+.demo h1 { max-width: 19ch; margin: 18px 0; font-size: clamp(2.25rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -.045em; }
+.demo h2 { margin: 0 0 10px; font-size: var(--vui-text-heading); }
+.demo p { color: var(--vui-color-muted); }
+.demo-hero { display: grid; gap: 12px; }
+.demo-hero > p, .demo-lead { max-width: 70ch; }
+.demo-hero .vui-code-panel { margin-top: 24px; }
+.token-grid, .surface-grid, .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.surface-grid, .metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.token-grid .vui-card { display: grid; gap: 12px; overflow: hidden; }
+.token-grid code { color: var(--vui-color-muted); overflow-wrap: anywhere; }
+.token-swatch { display: block; height: 54px; border: 1px solid var(--vui-color-border); border-radius: 14px; }
+.token-swatch--background { background: var(--vui-color-background); }
+.token-swatch--surface { background: var(--vui-color-surface); }
+.token-swatch--accent { background: var(--vui-color-accent); }
+.token-swatch--foreground { background: var(--vui-color-foreground); }
+.demo-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.demo-form { display: grid; max-width: 680px; gap: 10px; }
+.demo-form label { margin-top: 8px; font-weight: 700; }
+.demo-form .vui-button { width: fit-content; margin-top: 10px; }
+.vui-callout { margin-top: 20px; }
+@media (max-width: 800px) { .token-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .surface-grid, .metric-grid { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .token-grid { grid-template-columns: 1fr; } .demo main { gap: 52px; padding-top: 48px; } }
