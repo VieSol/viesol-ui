@@ -1,7 +1,7 @@
 {
   "name": "@viesol/liquid-glass",
   "version": "0.1.0",
-  "private": true,
+  "description": "Reusable React primitives for the VieSol Liquid Glass design language.",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/index.js",
@@ -12,16 +12,28 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./styles.css": "./dist/index.css"
+    "./styles.css": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.css"
+    }
   },
   "sideEffects": ["**/*.css"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VieSol/viesol-ui.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
     "build:demo": "vite build --config vite.demo.config.ts",
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepack": "pnpm run typecheck && pnpm run test && pnpm run build"
   },
   "peerDependencies": {
     "react": ">=19.0.0",
