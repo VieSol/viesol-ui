@@ -33,7 +33,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit",
     "test": "vitest run",
-    "prepack": "pnpm run typecheck && pnpm run test && pnpm run build"
+    "prepack": "pnpm run typecheck && pnpm run test && pnpm run build",
+    "prepare": "pnpm run build"
   },
   "peerDependencies": {
     "react": ">=19.0.0",
