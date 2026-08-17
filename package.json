@@ -2,6 +2,7 @@
   "name": "@viesol/liquid-glass",
   "version": "0.1.0",
   "description": "Reusable React primitives for the VieSol Liquid Glass design language.",
+  "license": "MIT",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/index.js",
