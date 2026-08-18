@@ -77,7 +77,7 @@
 .vui-field:disabled { cursor: not-allowed; opacity: .55; }
 .vui-textarea { min-height: 96px; resize: vertical; }
 .vui-select { appearance: auto; }
-.vui-button:focus-visible, .vui-field:focus-visible { outline: none; box-shadow: var(--vui-focus-ring), var(--vui-shadow-sm); }
+.vui-button:focus-visible, .vui-field:focus-visible { outline: none;}
 
 .vui-badge, .vui-status {
   display: inline-flex;
