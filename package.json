@@ -1,10 +1,12 @@
 {
   "name": "@viesol/liquid-glass",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Reusable React primitives for the VieSol Liquid Glass design language.",
   "license": "MIT",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -18,7 +20,9 @@
       "default": "./dist/index.css"
     }
   },
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VieSol/viesol-ui.git"
